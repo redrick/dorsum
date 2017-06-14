@@ -1,0 +1,7 @@
+databases:
+  DB_NAME:
+    host: '127.0.0.1'
+    user: 'postgres'
+    container_name: 'postgres-db'
+    destination: '/backups/'
+    subdirectories: '/name/date'

@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Andrej Antas"]
   spec.email         = ["andrej@antas.cz"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Library to backup your dokku postgres containers}
+  spec.description   = %q{Library to backup your dokku postgres containers, provides binstub you can easily load in cron and let it run}
+  spec.homepage      = "https://github.com/redrick/dorsum"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -33,4 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
+
+  spec.add_runtime_dependency 'activesupport', '~> 5.1'
+  spec.add_runtime_dependency 'net-ssh', '~> 4.1'
 end
